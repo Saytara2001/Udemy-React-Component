@@ -5,6 +5,8 @@ import './Component/card.css'
 import Cards from './Component/Card';
 import ParagraphHead from './Component/paragraphTitle';
 import HeadTitle from './Component/headTitle';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 function App() {
   return (

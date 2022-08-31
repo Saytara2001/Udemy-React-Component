@@ -1,8 +1,4 @@
 import React from 'react'
-import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import ReactStars from 'react-rating-stars-component'
-import {render} from 'react-dom'
-import { FaBeer } from 'react-icons/fa';
 function Cards(){
     // const ratingChanged = (newRating) => {
     //     console.log(newRating);
