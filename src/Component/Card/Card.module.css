@@ -1,0 +1,54 @@
+.h5 {
+    margin: 5px 0px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.p {
+    margin: 5px 0px;
+    color: var(--grey);
+}
+
+.rate {
+    display: flex;
+    align-items: center;
+}
+
+.num-rate {
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--orange);
+}
+
+.watch-rate {
+    color: var(--grey);
+}
+
+.price {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.price-after {
+    font-weight: bold;
+    font-size: 20px;
+    align-items: center;
+}
+
+.price-before {
+    color: var(--grey);
+    font-size: 15px;
+    align-items: center;
+    text-decoration: line-through;
+}
+
+
+.linkA {
+    display: inline-flex;
+}
+
+article:hover {
+    transform: scale(1.1, 1.1)
+        /* transition: transform 300ms cubic-bezier(0.18, 0.89, 0.43, 1.19); */
+}

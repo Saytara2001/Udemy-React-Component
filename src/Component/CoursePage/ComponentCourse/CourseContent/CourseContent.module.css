@@ -1,0 +1,54 @@
+.list-1 {
+    padding: 10px;
+    border: 1px solid var(--grey);
+    background-color: var(--lightgrey);
+    display: grid;
+    grid-template-columns: 3% 97%;
+    align-items: center;
+    cursor: pointer;
+}
+
+.con-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-collapse {
+    padding: 15px;
+    border: 1px solid var(--grey);
+    background-color: var(--white);
+    display: grid;
+
+}
+
+.card-body {
+    display: grid;
+    grid-template-columns: 5% 90%;
+    align-items: center;
+}
+
+.con-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-body-title {
+    font-size: 15px;
+    color: var(--black);
+}
+
+.card-body-h5 {
+    font-size: 15px;
+    color: var(--purple);
+}
+
+.iconRotate {
+    transform: rotateX(180deg);
+}
+
+.iconUpToggle,
+main .course-content .card-collapse .card-body i {
+    justify-self: center;
+}

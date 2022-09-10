@@ -1,40 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
-import data from './Component/Card'
-import './Component/card.css'
-import Cards from './Component/Card';
-import ParagraphHead from './Component/paragraphTitle';
-import HeadTitle from './Component/headTitle';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import './Component/Heading/Header'
+import './App.css';
+import { Routes, Route } from 'react-router-dom'
+import NavBar from './Component/NavBar/NavBar';
+import Header from './Component/Heading/Header';
+import ContainerCourses from './Component/Tap/ContainerCourses';
+import Coursepage from './Component/CoursePage/Coursepage';
+import HomePage from './Component/HomePage';
+import { Component, useEffect } from 'react';
+import axios from 'axios'
+class App extends Component {
 
-function App() {
-  return (
-    <div className="App">
-      <section className="container p-4">
-            <h1>A Broad Selection of Courses</h1>
-            <h4>Choose from 185,000 online video courses 
-                with new additions published every month</h4>
-            <ul>
-                <button className='btn active'>Python</button>
-                <button className='btn active'>Exel</button>
-                <button className='btn active'>java</button>
-                <button className='btn active'>Node</button>
-                <button className='btn active'>.net</button>
-                <button className='btn active'>React</button>
-            </ul>
-            <div className="container-courses">
-                <HeadTitle />
-                <ParagraphHead />
-                <button>Explore Python</button>
-                <section className="container-cards">
-                    <Cards />
-                </section>
-                
-            </div>
-        </section>
-    </div>
-  );
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      courses: []
+
+    }
+  }
+
+  componentDidMount() {
+    axios.get('http://localhost:3000/courses').then(response => {
+      this.setState({
+        courses: response.data
+      })
+    }).catch(error => {
+      console.log(error)
+    })
+  }
+
+  render() {
+    const { courses } = this.state;
+    return (
+      <>
+        <Routes>
+          <Route path='/' element={<HomePage courses={courses} />} />
+          <Route path='/coursePage/:id' element={<Coursepage courses={courses} />} />
+        </Routes>
+      </>
+    );
+  }
 }
 
 export default App;

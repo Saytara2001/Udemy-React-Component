@@ -1,0 +1,43 @@
+.section-container {
+    text-align: start;
+}
+
+.ul {
+    list-style: none;
+    margin-left: 0px;
+    padding-left: 0;
+}
+
+.button-ul {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18x;
+    font-weight: bold;
+    border: none;
+    background: none;
+}
+
+.button:hover {
+    background-color: var(--lightgrey);
+}
+
+.container-courses {
+    padding: 32px;
+    width: 100%;
+    border: 1px solid var(--grey);
+}
+
+.button {
+    font-size: 15px;
+    height: 35px;
+    font-weight: bold;
+    background: none;
+    border: 1px solid var(--grey);
+    margin-bottom: 20px;
+}
+
+.button:hover {
+    background-color: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+}

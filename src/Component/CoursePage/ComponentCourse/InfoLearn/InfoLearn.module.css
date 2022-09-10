@@ -1,0 +1,10 @@
+.container-card {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid var(--black);
+}
+
+.text {
+    color: var(--grey);
+    font-size: 14px;
+}

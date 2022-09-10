@@ -1,0 +1,85 @@
+.headerCard {
+    position: absolute;
+    width: 30%;
+    top: 8%;
+    right: 0%;
+    height: 360vh;
+}
+
+.containerCard {
+    width: 350px;
+    background: var(--white);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    left: 65%;
+    top: 10%;
+}
+
+.img {
+    width: 100%;
+    height: 170px;
+}
+
+.info {
+    padding: 20px;
+}
+
+.h1 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.info-buy {
+    display: grid;
+    grid-template-columns: 77% 20%;
+    justify-content: space-between;
+}
+
+.icon {
+    border: 1px solid var(--black);
+    height: 40px;
+}
+
+.i {
+    font-size: 30px;
+}
+
+.button-1 {
+    background: var(--lightpurple);
+    color: var(--white);
+}
+
+.i-2 {
+    color: var(--black);
+}
+
+.button-2 {
+    height: 40px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    background: none;
+}
+
+.hoverButton:hover {
+    background-color: var(--lightgrey);
+    cursor: pointer;
+    color: var(--black);
+}
+
+.a {
+    color: var(--black);
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.h3 {
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .headerCard {
+        display: none;
+    }
+
+}

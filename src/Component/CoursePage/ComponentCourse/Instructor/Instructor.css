@@ -1,0 +1,21 @@
+.instrutors .con-inffo img {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+}
+
+.instrutors h3 a {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.instrutors h3 {
+    color: var(--grey);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.instrutors .con-inffo .con-right p {
+    color: var(--black);
+    font-weight: bold;
+}

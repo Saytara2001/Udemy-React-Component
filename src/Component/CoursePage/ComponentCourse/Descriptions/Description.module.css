@@ -1,0 +1,19 @@
+.descriptionText {
+    color: var(--black);
+}
+
+.readMoreBtn {
+    background: none;
+    border: none;
+    color: var(--purple);
+    font-weight: bold;
+    padding: 0;
+}
+
+.moreText {
+    display: none;
+}
+
+.rotateIcon {
+    transform: rotate(.5turn);
+}
